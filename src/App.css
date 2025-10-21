@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body, #root{
+  height: 100vh;           /* take full screen height */
+  width: 100%;             /* take full width */
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Bebas Neue', cursive;
+  background: #E8DDDD;
+
+}
+
+#root{
+  height: 100vh;           /* take full screen height */
+  width: 100%;             /* take full width */
+}
+body, #root, .Head {
+  height: 100vh;  /* full viewport height */
+  width: 100%;    /* full width */
+  margin: 0;      /* no extra spacing */
+  padding: 0;     /* no extra spacing */
+}
+.Head{
+  height: auto;           /* take full screen height */
+  width: 100%;             /* take full width */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+
+.Head h1 {
+  font-size: 30vw;
+  letter-spacing: 0.01em;
+  padding: 0;
+  margin: 0;
+ background: linear-gradient(180deg, 
+                              #000000 0%,    /* black at top */
+                              #000000 25%,   /* dark gray */
+                              #000000 50%,   /* medium gray */
+                              #AAAAAA 100%,   /* light gray */
+                              #FFFFFF 100%); 
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-text-stroke: 2px black;  /* thickness + color */
+  text-stroke: 2px black;
+}
+
+.Head h4 {
+  font-size: 3vw;
+  letter-spacing: 0.01em; 
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  transform: translateY(3vw); 
+  color: black;
+
+}
+
+
+.Hero_image{
+  margin: 0;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.Hero_image img{
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+.HeroSection {
+  height: 115vh;
+  min-height: 100vh;  
+  /* height: 100vh; full screen height */
+  width: 100%;  /* full screen width */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  overflow: hidden;
+  /* padding-bottom: 8rem;        adjust until car is visible */
+  background: #E8DDDD; /* default background */
+  transition: background 1s ease-in-out;
+  overflow: hidden; 
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+
+/* After click — gradient background */
+.HeroSection.active {
+  background: linear-gradient(to bottom, white, black);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.HeroSection.active .Hero_image img {
+  transform: translateY(8rem); /* moves image down smoothly */
+}
+
+.Hero_image_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.Hero_image {
+  width: clamp(250px, 40vw, 500px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* Letter A styling */
+.letterA {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw, 1rem);
+  color: black;
+  position: absolute;
+  top: 80%;
+  margin-bottom: 1rem;
+}
+
+

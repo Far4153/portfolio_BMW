@@ -1,0 +1,73 @@
+.SlideTwo{
+    background: black;
+    /* overflow-x: hidden; */
+    position: relative; /* container for absolute children */
+    height: 150vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.SlideTwo_Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh; /* moves the car slightly down from heading */
+    margin: 8vw;
+}
+
+.yellowCar {
+    width: auto;
+    height: auto;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 3vw;
+}
+
+.skills h2{
+    font-size: 3vw;
+    letter-spacing: 0.01em; 
+    padding-top: 5vw;
+
+    
+}
+
+.card{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background: linear-gradient(180deg, rgb(216, 197, 197), black);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    border:solid whitesmoke 0.1vw;
+    margin-top: 30vh; /* moves the car slightly down from heading */
+
+    
+    
+}
+
+.card1 {
+  top: 5%;
+  left: 5%;
+}
+
+.card2 {
+  top: 5%;
+  right: 5%;
+}
+
+.card3 {
+  bottom: 5%;
+  left: 5%;
+}
+
+.card4 {
+  bottom: 5%;
+  right: 5%;
+}
