@@ -1,11 +1,11 @@
 .SlideTwo{
-    background: black;
-    /* overflow-x: hidden; */
-    position: relative; /* container for absolute children */
-    height: 150vh;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 0;
+  background: black;
+  position: relative; /* container for absolute children */
+  height: 125vh;
+  min-height: 100vh;
+  padding-bottom: 0;
+  padding: 0;  /* Remove all padding */
+  margin: 0;   /* Remove all margin */
 
 }
 
@@ -15,43 +15,46 @@
     align-items: center;
     margin-top: 20vh; /* moves the car slightly down from heading */
     margin: 8vw;
-}
-
-.yellowCar {
-    width: auto;
+  
+  }
+  
+  .yellowCar {
+    width: 125vh;
     height: auto;
-}
+  }
+
 .skills{
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    margin-top: 3vw;
-}
-
-.skills h2{
+    padding: 3vw;
+    z-index: 5;
+  }
+  
+  .skills h2{
     font-size: 3vw;
     letter-spacing: 0.01em; 
-    padding-top: 5vw;
-
-    
-}
-
-.card{
+    padding: 0;
+    margin: 0; 
+  }
+  
+  .card{
     position: absolute;
-    width: 20vw;
+    width: 18vw;
     height: 20vw;
     background: linear-gradient(180deg, rgb(216, 197, 197), black);
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;     /* Center horizontally */
     text-align: center;
     border:solid whitesmoke 0.1vw;
-    margin-top: 30vh; /* moves the car slightly down from heading */
-
-    
-    
-}
-
+    margin-top: 15vh; /* moves the car slightly down from heading */
+    padding-top: 0.1vh;       /* push h2 a bit from top */
+    z-index: 1;
+    /* padding: 2vh 1vw;  */
+  }
+  
 .card1 {
   top: 5%;
   left: 5%;
@@ -63,11 +66,66 @@
 }
 
 .card3 {
+  padding: 0;
+  margin: 0;
   bottom: 5%;
   left: 5%;
 }
 
 .card4 {
+  padding: 0;
+  margin: 0;
   bottom: 5%;
   right: 5%;
+}
+
+
+.card h2{
+  height: fit-content;
+  margin-top: 5vh;
+  margin-bottom: 0;
+  padding: 0%;
+}
+
+.cards {
+
+z-index: 1; /* Cards in the back */
+}
+
+.card-content {
+  margin-top: 1vh;  
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;     /* left align for bullet effect */
+  position: relative;
+  }
+
+  .card-content p {
+  padding-left: 1vw;
+  margin: 0;              /* remove browser default margins */
+  line-height: 1.4;       /* tighter spacing */
+  font-size: 1.2vw;       /* adjust as needed */
+  position: relative;         /* local positioning for its own bullet */
+
+}
+
+  .SlideTwo_Content img{
+    z-index: 10;
+  }
+  
+  
+
+.card-content p::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: whitesmoke;
+    font-size: 1.5vw;
+    top: 0%;
+    line-height: 1;
 }

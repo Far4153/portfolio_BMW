@@ -76,12 +76,17 @@ body, #root, .Head {
 
 .Hero_image img{
   position: absolute;
-  top: 70%;
-  left: 10%;
+  top: 0%;
+  left: 5%;
+  transform: translateX(0%); /* Center the car horizontally */
+  width: clamp(300px, 80vw, 1200px); /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 90vw; /* Don't overflow screen */
+  object-fit: contain; /* Keep proportions */
 }
 
 .HeroSection {
-  height: 115vh;
+  height: 125vh;
   min-height: 100vh;  
   /* height: 100vh; full screen height */
   width: 100%;  /* full screen width */
@@ -94,8 +99,8 @@ body, #root, .Head {
   background: #E8DDDD; /* default background */
   transition: background 1s ease-in-out;
   overflow: hidden; 
-  padding-bottom: 0;
-  margin-bottom: 0;
+  padding: 0;  /* Remove all padding */
+  margin: 0;   /* Remove all margin */
 }
 
 
@@ -107,7 +112,7 @@ body, #root, .Head {
 }
 
 .HeroSection.active .Hero_image img {
-  transform: translateY(8rem); /* moves image down smoothly */
+  transform: translateX(8%) translateY(35rem); /* moves image down smoothly */
 }
 
 .Hero_image_container {

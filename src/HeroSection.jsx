@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import "./App.css";
-import heroImage from "./assets/Background.png";
+import heroImage from "./assets/HeroImage.png";
 import headLight from "./assets/Role.png";
 
 const HeroSection = () => {
@@ -17,9 +17,6 @@ const HeroSection = () => {
           
           <h1>FARJANA</h1>
 
-          
-
-      
 
         
       <div className='Hero_image' onClick={handleClick}>
