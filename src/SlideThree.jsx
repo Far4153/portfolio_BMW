@@ -1,6 +1,9 @@
 import React from "react";
 import "./SlideThree.css"
-import BMW_M3 from "./assets/BMW_M3.png";
+import BMW_M3 from "./assets/M3.png";
+import Bloodbank from "./assets/Blood-bank_Wallpaper.png";
+import LocationTracker from "./assets/Location-tracker_Wallpaper.png";
+import EBike from "./assets/E-bike_Wallpaper.png";
 
 
 
@@ -16,9 +19,10 @@ const SlideThree =()=>{
                         <h2>BLOODBANK</h2>
                         <div className="card-content">
                             <div className="thumbnails">
+                                <img src={Bloodbank}></img>
 
                             </div>
-                            <a className="links">LINK</a>
+                            <a className="links" href="https://far4153.github.io/Blood_bank/">LINK</a>
                             
                         </div>
                     </div>
@@ -26,9 +30,10 @@ const SlideThree =()=>{
                         <h2>E-BIKE WEBSITE</h2>
                         <div className="card-content">
                             <div className="thumbnails">
+                                <img src={EBike}></img>
 
                             </div>
-                            <a className="links">LINK</a>
+                            <a className="links" href="https://far4153.github.io/E_Bike_2.0/">LINK</a>
 
                         </div>
                     </div>
@@ -36,9 +41,9 @@ const SlideThree =()=>{
                         <h2>LOCATION TRACKER</h2>
                         <div className="card-content">
                             <div className="thumbnails">
-
+                                <img src={LocationTracker}></img>
                             </div>
-                            <a className="links">LINK</a>
+                            <a className="links" href="https://zidio-49-location-tracker-app.netlify.app/">LINK</a>
 
                         </div>
                     </div>

@@ -19,7 +19,7 @@
 
 
 .card{
-    z-index: 1;
+    z-index: 100;
     background: linear-gradient(180deg, black, white);
     justify-content: flex-start; /* pushes content from top, not center */
 }
@@ -45,8 +45,9 @@
 
 .BMW_M3 {
   position: relative;
-  top: 35vh;  /* pushes entire image div down */
-  z-index: 10;
+  margin-top: 45vh;
+  margin-right: -5vw;
+  z-index: 100;
   display: flex;
   justify-content: center;
 }
@@ -63,12 +64,13 @@
 .thumbnails {
   width: 10vw;
   height: 20vh;
-  background: white;
+  /* background: white; */
   border-radius: 1vh;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -3vh;
 }
 
 .thumbnails h2{
@@ -88,10 +90,24 @@
   border-radius: 0.5vh;
   font-weight: 500;
   transition: 0.3s ease;
+    position: relative; /* ADD THIS */
+  cursor: pointer;
 }
 
 .links:hover {
   background: white;
   color: black;
   transform: scale(1.05);
+}
+
+
+.thumbnails img{
+  width: 15vw;
+  height: 18vh;
+  border-radius: 3vh;
+}
+
+.card-content a{
+z-index: 1000;
+/* text-decoration: dashed; */
 }

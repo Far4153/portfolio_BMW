@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import yellowCar from "./assets/YellowCar.png";
+import BMW_2 from "./assets/BMW_5.png";
 import "./SlideTwo.css"
 
 const SlideTwo = () => {
@@ -10,7 +10,7 @@ const SlideTwo = () => {
             <h2>SKILLS</h2>
         </div>
       <div className="SlideTwo_Content">
-        <img src={yellowCar} alt="Yellow Car" className="yellowCar" />
+        <img src={BMW_2} alt="Yellow Car" className="yellowCar" />
       </div>
       <div className="cards">
         <div className="card card1">
