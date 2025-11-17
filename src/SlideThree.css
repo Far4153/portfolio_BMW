@@ -46,7 +46,7 @@
 .BMW_M3 {
   position: relative;
   margin-top: 45vh;
-  margin-right: -5vw;
+  margin-right: -0vw;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -90,7 +90,7 @@
   border-radius: 0.5vh;
   font-weight: 500;
   transition: 0.3s ease;
-    position: relative; /* ADD THIS */
+  position: relative; /* ADD THIS */
   cursor: pointer;
 }
 
@@ -110,4 +110,16 @@
 .card-content a{
 z-index: 1000;
 /* text-decoration: dashed; */
+}
+
+.card {
+  position: absolute;
+  z-index: 100;
+}
+
+.cardA{
+  z-index: 101;
+}
+.cardC{
+  z-index: 101;
 }
