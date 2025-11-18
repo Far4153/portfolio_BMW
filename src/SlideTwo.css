@@ -57,6 +57,7 @@
     padding-top: 0.1vh;       /* push h2 a bit from top */
     z-index: 1;
     /* padding: 2vh 1vw;  */
+    
   }
   
 .card1 {
@@ -109,6 +110,8 @@ z-index: 1; /* Cards in the back */
   align-items: center;
   align-items: flex-start;     /* left align for bullet effect */
   position: relative;
+  align-items: flex-start; 
+  
   }
 
   .card-content p {
@@ -117,6 +120,8 @@ z-index: 1; /* Cards in the back */
   line-height: 1.4;       /* tighter spacing */
   font-size: 1.2vw;       /* adjust as needed */
   position: relative;         /* local positioning for its own bullet */
+  color: black;
+  padding-left: 1vw; 
 
 }
 
@@ -129,9 +134,9 @@ z-index: 1; /* Cards in the back */
 .card-content p::before {
     content: "•";
     position: absolute;
-    left: 0;
-    color: whitesmoke;
+    color: black;
     font-size: 1.5vw;
     top: 0%;
     line-height: 1;
+    left: 0;
 }
