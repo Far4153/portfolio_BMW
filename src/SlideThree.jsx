@@ -4,6 +4,7 @@ import BMW_M3 from "./assets/M3.png";
 import Bloodbank from "./assets/Blood-bank_Wallpaper.png";
 import LocationTracker from "./assets/Location-tracker_Wallpaper.png";
 import EBike from "./assets/E-bike_Wallpaper.png";
+import Footer from "./Footer.jsx";
 
 
 
@@ -54,6 +55,7 @@ const SlideThree =()=>{
 
             </div>
 
+        <Footer/>
         </div>
     )
 }

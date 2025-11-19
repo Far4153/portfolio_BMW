@@ -45,8 +45,8 @@
 
 .BMW_M3 {
   position: relative;
-  margin-top: 45vh;
-  margin-right: -0vw;
+  margin-top: 30vh;
+  margin-left: 3vw;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -122,4 +122,11 @@ z-index: 1000;
 }
 .cardC{
   z-index: 101;
+}
+
+.SlideThree {
+  min-height: 100vh;     /* full page height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* push footer to bottom */
 }
