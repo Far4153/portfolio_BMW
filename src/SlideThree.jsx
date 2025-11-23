@@ -23,7 +23,7 @@ const SlideThree =()=>{
                                 <img src={Bloodbank}></img>
 
                             </div>
-                            <a className="links" href="https://far4153.github.io/Blood_bank/">LINK</a>
+                            <a className="links" href="https://far4153.github.io/Blood_bank1/">LINK</a>
                             
                         </div>
                     </div>
