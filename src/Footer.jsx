@@ -18,7 +18,6 @@ const Footer = () => {
       </div>
 
       <div className='right_f'>
-        <p>CLICK ON ENVELOPE TO GET IN TOUCH WITH ME</p>
         <a 
           href="mailto:farjanashaik153@gmail.com"
           onClick={openGmailCompose}
@@ -26,6 +25,7 @@ const Footer = () => {
         >
           <i className="fa-regular fa-envelope" style={{color:"white"}}></i>
         </a>
+        <p>CLICK ON ENVELOPE TO GET IN TOUCH WITH ME</p>
       </div>
     </div>
   );
