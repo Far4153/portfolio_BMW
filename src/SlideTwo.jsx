@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import BMW_2 from "./assets/white_bmw.png";
+import BMW_2 from "./assets/S2.png";
 import "./SlideTwo.css"
 
 const SlideTwo = () => {

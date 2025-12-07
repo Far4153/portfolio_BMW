@@ -19,12 +19,12 @@
   }
   
   .yellowCar {
-  width: 65vw;  /* adjust based on your preference */
+  width: 50vw;  /* adjust based on your preference */
   height: auto;
-  max-height: 250vh;
+  max-height: 200vh;
   object-fit: contain;
   z-index: 10;
-    margin-top: -95vh;
+    margin-top: -20vh;
   }
 
 .skills{
