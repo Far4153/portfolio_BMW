@@ -22,7 +22,7 @@ const HeroSection = () => {
 
         
       <div className='Hero_image' onClick={handleClick}>
-        {clicked && <h4 className="letterA">A</h4>}
+        {clicked}
         <img src={clicked ? headLight : heroImage}></img>
 
       </div>
