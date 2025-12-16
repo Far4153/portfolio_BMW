@@ -20,11 +20,11 @@ const HeroSection = () => {
           <h1>FARJANA</h1>
 
 
-        
-      <div className='Hero_image' onClick={handleClick}>
-        {clicked}
-        <img src={clicked ? headLight : heroImage}></img>
-
+      <div className='Hero_image_wrapper'> 
+        <div className='Hero_image' onClick={handleClick}>
+          {clicked}
+          <img src={clicked ? headLight : heroImage}></img>
+        </div>
       </div>
       </div>
 

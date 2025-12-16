@@ -1,11 +1,12 @@
 .SlideThree{
   background: linear-gradient(to bottom, black 20%, black 0%, rgb(208, 205, 205) 80%);
   position: relative; /* container for absolute children */
-  height: 125vh;
+  height: auto;
   min-height: 100vh;
   padding-bottom: 0;
   padding: 0;  /* Remove all padding */
   margin: 0;   /* Remove all margin */
+  
 }
 
 .projects h2{
@@ -45,7 +46,7 @@
 
 .BMW_M3 {
   position: relative;
-  margin-top: 30vh;
+  margin-top: 45vh;
   margin-left: 3vw;
   z-index: 100;
   display: flex;
@@ -130,3 +131,152 @@ z-index: 1000;
   flex-direction: column;
   justify-content: space-between;  /* push footer to bottom */
 }
+
+  
+@media (max-width: 768px) {
+  
+  .SlideThree{
+    width: 100vw;
+    height: fit-content;
+    
+  }
+
+  .projects h2{
+  font-size: x-large;
+  padding-top: 1rem;
+}
+
+.BMW_M3 img{
+  width: 100vw;
+}
+
+.SlideThree_Content .card{
+  padding: 0%;
+  margin-top: 5rem;
+}
+.thumbnails{
+  padding: 0%;
+  /* margin: 0%; */
+}
+.thumbnails img{
+  width: 30vw;
+  height: auto;     
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.card-content{
+  padding: 0%;
+  margin: 0;
+  
+}
+
+.cards h2{
+  padding: 0%;
+  margin-top: 1rem;
+}
+
+.card-content a.links{
+  padding: 0%;
+  margin: 0rem;
+  line-height: 1;
+  
+}
+.cards .cardA{
+  margin-top: 8rem;
+}
+
+.cards .cardB{
+  margin-top: 7rem;
+}
+
+.cards .cardC{
+  margin-top: 8rem;
+}
+
+.card-content {
+  gap: 0;
+}
+
+.SlideThree_Content .card{
+  height: auto !important;
+  min-height: unset !important;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card-content .thumbnails {
+  padding: 0%;
+  /* margin: 0%; */
+}
+
+  .thumbnails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;        /* 🔥 removes invisible space */
+    height: auto;
+  }
+  
+  .thumbnails img{
+    display: block;       /* 🔥 prevents inline gap */
+    width: 30vw;
+    height: auto;
+  }
+  
+  .card-content{
+    align-items: flex-start;
+  }
+  
+  .thumbnails{
+    align-self: flex-start;   /* 🔥 prevents expansion */
+  }
+  .SlideThree_Content .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto !important;
+    min-height: unset !important;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .SlideThree_Content .card h2{
+    margin: 0 0 2rem 0;   /* space below heading */
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;   /* 👈 THIS controls thumbnail ↔ link gap */
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;          /* 🔥 THIS is missing */
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .cards .cardC {
+    align-self: flex-end;   /* 👉 pushes card C to the right */
+  }
+.cards .cardC {
+  margin-right: -2rem;
+}
+.card{
+  position: absolute;
+}
+
+  
+}
+
+

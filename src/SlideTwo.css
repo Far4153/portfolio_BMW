@@ -125,18 +125,118 @@ z-index: 1; /* Cards in the back */
 
 }
 
-  .SlideTwo_Content img{
-    z-index: 10;
-  }
-  
-  
+.SlideTwo_Content img{
+  z-index: 10;
+}
+
+
 
 .card-content p::before {
+  content: "•";
+  position: absolute;
+  color: black;
+  font-size: 1.5vw;
+  top: 0%;
+  line-height: 1;
+  left: 0;
+}
+
+
+@media (max-width: 768px) {
+  
+  /* SlideTwo main container */
+  .SlideTwo {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Heading at the top */
+  .skills {
+    width: 100%;
+    justify-content: center;
+    padding-top: 1rem;
+    position: relative;
+    z-index: 20;
+  }
+  
+  .skills h2 {
+    font-size: 6vw;
+    /* margin: 10%; */
+  }
+  
+  /* Center area for the car */
+  .SlideTwo_Content {
+    flex: 1;                      /* takes remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+  
+  /* Car centered */
+  .yellowCar {
+    width: 80vw;
+    max-width: 350px;
+    height: auto;
+    margin: 0;
+    z-index: 5;
+  }
+  
+  /* Cards */
+  .card {
+    position: absolute;
+    width: 38vw;
+    height: 20vh;
+    z-index: 15;
+  }
+  
+  .card1 {
+    padding: 0%;
+    margin: 0%;
+    top: 15%;
+    left: 3%;
+  }
+  
+  .card2 {
+    margin: 0%;
+    top: 15%;
+    right: 3%;
+  }
+  
+  .card3 {
+    bottom: 8%;
+    left: 3%;
+  }
+  
+  .card4 {
+    bottom: 8%;
+    right: 3%;
+  }
+  .card-content p {
+    /* padding-left: 1vw; */
+    margin: 0;              /* remove browser default margins */
+    line-height: 1.4;       /* tighter spacing */
+    font-size: 2vw;       /* adjust as needed */
+    position: relative;         /* local positioning for its own bullet */
+    color: black;
+    padding-left: 1vw; 
+    padding-top: 1.5vw;
+    
+  }
+  .card-content p::before {
     content: "•";
     position: absolute;
     color: black;
-    font-size: 1.5vw;
+    font-size: 2vw;
     top: 0%;
     line-height: 1;
     left: 0;
+    padding-top: 1.8vw;
+  }
 }

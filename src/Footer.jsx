@@ -18,13 +18,15 @@ const Footer = () => {
       </div>
 
       <div className='right_f'>
+        <div className='mail-icon'>
         <a 
           href="mailto:farjanashaik153@gmail.com"
           onClick={openGmailCompose}
           style={{ pointerEvents: "auto", cursor: "pointer" }}
         >
           <i className="fa-regular fa-envelope" style={{color:"white"}}></i>
-        </a>
+        </a>          
+        </div>
         <p>CLICK ON ENVELOPE TO GET IN TOUCH WITH ME</p>
       </div>
     </div>

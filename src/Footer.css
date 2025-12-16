@@ -11,6 +11,7 @@ body {
 
 .Footer {
     width: 100%;
+    height: 10vh;
     background: #000;
     display: flex;
     justify-content: space-between; /* pushes left + right apart */
@@ -32,4 +33,56 @@ body {
 .Footer a {
   cursor: pointer;
   z-index: 1000;
+}
+
+
+@media (max-width: 768px) {
+
+
+.Footer {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;   /* 🔥 IMPORTANT */
+  position: relative;
+}
+  .left_f p {
+    font-size: 1.5rem;
+    font-weight: 400;   /* removes bold */
+    text-align: center;
+  }
+
+.right_f {
+  width: 100%;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.right_f p {
+  max-width: 90%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  white-space: normal;      /* 🔥 force wrapping */
+  word-break: break-word;  /* 🔥 prevent overflow */
+  overflow-wrap: break-word;
+}
+
+  .mail-icon i {
+    font-size: 1.9rem;   /* envelope size */
+    cursor: pointer;
+  }
+
+  
+
+
 }
