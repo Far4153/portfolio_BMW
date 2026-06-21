@@ -1,17 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import "./App.css";
-import heroImage from "./assets/HeroImage.png";
+import heroImage from "./assets/heroImage.png";
 import headLight from "./assets/Role.png";
 import Navbar from "./Navbar.jsx";
 
 const HeroSection = () => {
-  const [clicked, setClicked] = useState(false);
+  const [showHeadlight, setShowHeadlight] = useState(false);
 
-  const handleClick  = () => setClicked(!clicked);
+  useEffect(()=>{
+    const timer = setTimeout(()=>{
+      setShowHeadlight(true);
+      
+    },3000)
+;
+return()=> clearTimeout(timer);  },[])
+
+
 
   return (
-    <div className= {`HeroSection ${clicked ? "active" : ""}`}>
+    <div className={`HeroSection ${showHeadlight ? "active" : ""}`}>
       <div className='Head'>
       <Navbar/>
         
@@ -21,9 +29,9 @@ const HeroSection = () => {
 
 
       <div className='Hero_image_wrapper'> 
-        <div className='Hero_image' onClick={handleClick}>
-          {clicked}
-          <img src={clicked ? headLight : heroImage}></img>
+        <div className='Hero_image'>
+         
+          <img src={showHeadlight ? headLight : heroImage}></img>
         </div>
       </div>
       </div>

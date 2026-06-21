@@ -183,7 +183,10 @@ body, #root {
     padding-bottom: 2rem;
   }
 
-  
+  Hero_image img {
+  opacity: 1;
+  transition: opacity 1s ease, transform 0.8s ease;
+}
 
 }
 

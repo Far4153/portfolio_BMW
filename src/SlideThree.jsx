@@ -1,9 +1,9 @@
 import React from "react";
 import "./SlideThree.css"
 import BMW_M3 from "./assets/M3.png";
-import Bloodbank from "./assets/Blood-bank_Wallpaper.png";
-import LocationTracker from "./assets/Location-tracker_Wallpaper.png";
-import EBike from "./assets/E-bike_Wallpaper.png";
+import Bloodbank from "./assets/Blood-bank_wallpaper.png";
+import LocationTracker from "./assets/Location-tracker_wallpaper.png";
+import EBike from "./assets/E-bike_wallpaper.png";
 import Footer from "./Footer.jsx";
 
 
